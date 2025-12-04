@@ -4,7 +4,8 @@
     <title> AULA 1 </title>
 </head>
 
-<body>
+<body style="background-color: cadetblue;">
+    <div>
     <h1> Hello world</h1>
     <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit praesentium, placeat consectetur quos ab
@@ -12,13 +13,13 @@
         voluptatibus inventore.
     </p>
 
-    <form>
+    <form action="/submit" method="post">
 
         <label for="name">Nome:</label><br>
         <input type="text" id="name" name="name" required><br>
         <p>
             <label for="email">Email:</label><br>
-            <input type="email">
+            <input type="email" id="email" name="email" required><br>
         </p>
         <p>
             <label>Telefone:</label><br>
@@ -26,20 +27,32 @@
         </p>
 
         <p>
-            <label>Digite seu texto aqui:</label>
-            <textarea></textarea>
+            <label for="texto-user">Digite seu texto:</label>
+            <textarea id="texto-user" name="texto-user" rows="4" cols="50"></textarea>
         </p>
         <p>
-            <label for="Cursos">Escolha um curso:</label>
-            <select name="Cursos" id="Cursos" required>
-            <option value="Selecione"></option>
-            <option value="portugues">Portugues</option>
+            <label for="cursos">Cursos:</label>
+            <select name="cursos" id="Cursos" required>
+            <option value="" disabled selected>Selecione um dos Cursos</option>
+            <option value="frontend">Frontend</option>
             <option value="ingles">Ingles</option>
-            <option value="Backend">backend</option>    
-            </select>
-            
-        </p>
+            <option value="backend">Backend</option>    
+            </select><br>
 
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos e condições</label><br>
+        </p>
+            <strong>Kaltsit</strong>
+            <img src="https://arknights.wiki.gg/images/Kal%27tsit_icon.png?c470c1" alt="Kaltsit"><br>
+
+            <input type="radio" id="ligar" name="ligar" required>
+            <label for="ligar">Clique para ligar o radio</label><br>
+
+            <input type="button" id="aperte" name="aperte" required>
+            <label for="aperte">Aperte o botão</label><br>
+
+            <a href="https://arknights.fandom.com/wiki/Rosmontis">Rosmontis Wiki</a><br>
+            
 
 
 
