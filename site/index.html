@@ -17,7 +17,7 @@
 
     <div class="container main-content">
 
-        <section id="cadastro" class="card"></section>
+        <section id="cadastro" class="card">
         <h2 class="card-header">Cadastro de Mercadoria</h2>
         <div class="card-body">
             <form>
@@ -25,13 +25,85 @@
                     <label for="mercadoria-id">ID</label>
                     <input type="text" id="mercadoria-id" value="001" readonly class="form-control">
                 </div>
+                
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Curry" required class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" min="0" required class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="validade">Validade</label>
+                    <input type="date" id="validade" required class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" class="form-control">
+                        <option value="disponivel">Disponível</option>
+                        <option value="esgotado">Esgotado</option>
+                        <option value="vencido">vencido</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="reset" classe="btn btn-secondary">Limpar</button>   
             </form>
+        </div>
+        </section>
         
-    
+        <div style="height: 30px;"></div>
+        
+        <section id="tabela" class="card">
+            <h2 class="card-header"> Dados Cadastrados</h2>
+            <div class="card-body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Qtd</th>
+                            <th>Validade</th>
+                            <th>Status</th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Leite Integral</td>
+                            <td>50</td>
+                            <td>2026-01-20</td>
+                            <td class="status-disponivel">Disponível</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Pão Frânces</td>
+                            <td>120</td>
+                            <td>2025-12-08</td>
+                            <td class="status-esgotado">Esgotado</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Refrigerante 2L</td>
+                            <td>5</td>
+                            <td>2025-11-01</td>
+                            <td class="status-vencido">Vencido</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+        </section>
+    </div>
 
-    
-
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Estoque Simples. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+        
 </body>
-
-
 </htmL>
