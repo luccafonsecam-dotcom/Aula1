@@ -7,16 +7,7 @@
 body { background-color: #ACF39D;
 }
 
-.navstyle{
-    background-color: #343A40;
-}
-.navlista{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.nav-item{
-    margin: 2rem;
+.container-fluid{
+    background-color: rgb(78, 146, 143);
 }
 
