@@ -7,7 +7,21 @@
 body { background-color: #ACF39D;
 }
 
-.container-fluid{
-    background-color: rgb(78, 146, 143);
+
+
+.status-disponivel{
+    color: green !important;
+    font-weight: bolder;
+}
+
+.status-esgotado{
+    color: red !important;
+    font-weight: bolder;
+
+}
+.status-vencido{
+    color: grey !important;
+    font-weight: bolder;
+
 }
 
